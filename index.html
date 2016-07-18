@@ -1,1 +1,33 @@
-Hello World!
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+	<title>contravariant.org</title>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+	    body, html {height: 99%; }
+	
+		#outer {height: 100%; overflow: hidden; position: relative; width: 100%;}
+		#outer[id] {display: table; position: static;}
+		
+		#middle {position: absolute; top: 50%; width: 100%; text-align: center;} /* for explorer only*/
+		#middle[id] {display: table-cell; vertical-align: middle; position: static;}
+						
+		div.ubuntu {
+		  font-family: 'Ubuntu', serif;
+          font-size: 100px;
+          letter-spacing: 0.2em;
+		}
+		
+		body {
+		  background-color: DarkSlateGrey;
+		  color: LightSlateGrey;
+		}
+	</style>
+</head>
+<body>
+<div id="outer">
+  <div id="middle" class="ubuntu">contravariant.org</div>
+</div>
+</body>
+</html>
